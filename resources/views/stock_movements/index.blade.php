@@ -13,8 +13,11 @@
         <div class="alert alert-success">{{ session('success') }}</div>
     @endif
 
-    <a href="{{ route('stock-movements.create') }}" class="btn btn-primary mb-3">+ Transaksi Baru</a>
-    <a href="{{ route('products.index') }}" class="btn btn-secondary mb-3">← Kembali ke Produk</a>
+    <div class="mb-3">
+        <a href="{{ route('dashboard') }}" class="btn btn-outline-dark">← Dashboard</a>
+        <a href="{{ route('stock-movements.create') }}" class="btn btn-primary">+ Transaksi Baru</a>
+        <a href="{{ route('products.index') }}" class="btn btn-secondary">Lihat Daftar Produk</a>
+    </div>
 
     <table class="table table-bordered table-striped">
         <thead>

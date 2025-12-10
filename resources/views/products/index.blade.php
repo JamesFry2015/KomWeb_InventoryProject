@@ -14,9 +14,14 @@
     @endif
 
     <div class="d-flex justify-content-between align-items-center mb-3">
-        <a href="{{ route('products.create') }}" class="btn btn-primary">
-            + Tambah Produk
-        </a>
+        <div>
+            <a href="{{ route('dashboard') }}" class="btn btn-outline-dark me-2">
+                ← Dashboard
+            </a>
+            <a href="{{ route('products.create') }}" class="btn btn-primary">
+                + Tambah Produk
+            </a>
+        </div>
 
         <a href="{{ route('stock-movements.index') }}" class="btn btn-outline-secondary">
             Riwayat Stok
